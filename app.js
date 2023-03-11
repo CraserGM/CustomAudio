@@ -1,0 +1,1 @@
+const audio = new Audio('I-Am-Just-A-Freak.mp3')
