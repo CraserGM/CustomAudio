@@ -190,3 +190,98 @@ body{
 
 
 
+
+
+
+main{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.songs__container{
+    display: grid;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 20px;
+    grid-template-columns: minmax(400px, 800px);
+    grid-template-rows: repeat(auto-fill, minmax(90px, 90px));
+    row-gap: 10px;
+}
+
+.songs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+
+.songHead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+
+
+.songImg{
+    width: 90px;
+    height: 90px;
+    background-image: url(/img/songs-imgs/Freaks.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px 0 0 3px;
+}
+.songImg h4{
+    font-size: .8em;
+    font-weight: lighter;
+    width: 40px;
+    margin: 10px 0 0 10px;
+}
+
+.songTitle{
+    margin: 0 0 0 10px;
+}
+
+.songTitle h3{
+    font-size: 1em;
+}
+.songTitle span{
+    font-size: .8em;
+    color: #b8b8b8;
+}
+
+
+
+.songBody{
+    width: 70%;
+    height: 100%;
+}
+.songControls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#PlayPause{
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0 24px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
